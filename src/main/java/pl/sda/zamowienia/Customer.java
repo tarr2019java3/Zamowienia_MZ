@@ -3,14 +3,12 @@ package pl.sda.zamowienia;
 public class Customer {
     //name (imię klienta), surname(nazwisko klienta),
     // age (wiek klienta), email (adres e-mail klienta)
-    private String name;
-    private String surname;
+    private String nameSurname;
     private int age;
     private String email;
 
     public Customer(String name, String surname, int age, String email) {
-        this.name = name;
-        this.surname = surname;
+        this.nameSurname = name;
         this.age = age;
         this.email = email;
     }
@@ -18,20 +16,12 @@ public class Customer {
 
     }
 
-    public String getName() {
-        return name;
+    public String getNameSurname() {
+        return nameSurname;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setNameSurname(String nameSurname) {
+        this.nameSurname = nameSurname;
     }
 
     public int getAge() {

@@ -18,4 +18,36 @@ public class Order {
     public Order (){
 
     }
+
+    public double getQuntity() {
+        return quntity;
+    }
+
+    public void setQuntity(double quntity) {
+        this.quntity = quntity;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 }

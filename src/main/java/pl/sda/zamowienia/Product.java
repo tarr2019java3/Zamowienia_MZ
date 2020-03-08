@@ -5,7 +5,7 @@ public class Product {
     // name (nazwa produktu), price (cena produktu),
     // category (pole typu Category – kategoria produktu)
     private String name;
-    private int cena;
+    private double cena;
     private Category category;
 
     public Product(String name, int cena, Category category) {
@@ -34,17 +34,29 @@ public class Product {
         this.name = name;
     }
 
-    public int getCena() {
-        return cena;
-    }
-
-    public void setCena(int cena) {
-        this.cena = cena;
-    }
-
     public String checkName(String name) {
         return checkName (name.toUpperCase ( ));
     }
 
+    public boolean cenaDodatnia(double cena) {
+        if (cena > 0.0) {
+            return true;
+        } else {
+            return false;
+        }
 
+    }
+
+    public double getCena() {
+        return cena;
+    }
+
+    public void setCena(double cena) throws CenaException {
+        if(cenaDodatnia (cena)) {
+            this.cena = cena;
+        }
+        else{
+            throw new CenaException ("Cena musi być większa od 0");
+        }this.cena = cena;
+    }
 }

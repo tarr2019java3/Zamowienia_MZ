@@ -4,7 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Category category = new Category ("a", "b", "c");
 
         Product produkt1 = new Product ("WODA", 20, "A");
         Product product2 = new Product ("BUŁKA", 5, "B");
